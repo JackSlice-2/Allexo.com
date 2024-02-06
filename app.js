@@ -10,7 +10,6 @@ for(let i = 0; i < thumbnailItemsDom.length; i++) {
         showSlider(i);
     });
 }
-let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 1000;
@@ -43,11 +42,6 @@ function showSlider(type){
         carouselDom.classList.remove('next');
         carouselDom.classList.remove('prev');
     }, timeRunning);
-
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        click();
-    }, timeAutoNext)
 }
 
 
