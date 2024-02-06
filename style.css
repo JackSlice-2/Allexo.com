@@ -140,7 +140,7 @@ header a{
     position: absolute;
     top: 30rem;
     right: 65rem;
-    z-index: 100;
+    z-index: 5;
     width: 300px;
     max-width: 30%;
     display: flex;
@@ -384,7 +384,7 @@ header a{
 #menu {
 	height: 45px;
 	padding-left: 15px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 #menu ul, #menu li {
 	margin: 0 auto;
@@ -433,11 +433,12 @@ header a{
 	margin-left: 20px;
 }
 @media screen and (max-width: 800px){
-	#menu {position:relative; font-size: 30px; right:10px}
-	#menu ul {position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
-	#menu li {display:block;float:none;width:auto;}
+	#menu {position:absolute; font-size: 20px; left: -0.5em}
+	#menu ul {position:absolute;top:100%;z-index:300000;display:none; background: red;
+        text-align:center; left: -25px; width: 110vw; height: 100vh;}
+	#menu li {display:block;float:none;width:auto; top: 100px; font-weight: bolder;}
 	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
+	#menu input {z-index:400000}
 	#menu input:checked + label {color:#FFFFFF}
 	#menu input:checked + label:before {content:"\00d7"}
 	#menu input:checked ~ ul {display:block}
@@ -452,7 +453,7 @@ header a{
     bottom: 1em;
     left: 1em;
     width: max-content;
-    z-index: 100;
+    z-index: 10;
     display: flex;
 }
 .thumbnail .item{
