@@ -265,10 +265,10 @@ header a{
     width: 150px;
     height: 220px;
     position: absolute;
-    bottom: 50px;
-    left: 50%;
+    bottom: 5px;
+    left: 5%;
     border-radius: 30px;
-    animation: showImage .5s linear 1 forwards;
+    animation: showImage .7s linear 1 forwards;
 }
 @keyframes showImage{
     to{
@@ -342,7 +342,7 @@ header a{
         width: 150px;
         height: 220px;
         bottom: 50px;
-        left: 50%;
+        left: 5%;
         border-radius: 20px;
     }
 }
@@ -491,7 +491,6 @@ header a{
 .arrows button{
     height: 200px;
 }
-
 .carousel .list .item .content{
     position: absolute;
     top: 3rem;
@@ -500,8 +499,6 @@ header a{
     height: 80rem;
     left: 11rem;
     transform: translateX(-50%);
-    color: #fff;
-    text-shadow: 0 5px 10px #0004;
 
 }
 .carousel .list .item .title,
@@ -512,21 +509,26 @@ header a{
 #topic{
     font-size: 1.5em;
 }
-.carousel .list .item .topic{
+.carousel .list .item .topic,
+.topic{
     color: #f1683a;
 }
 .carousel .list .item:nth-child(1) .content .author,
 .carousel.prev .list .item:nth-child(2) .content .author,
 .carousel.prev .list .item:nth-child(2) .content .buttons,
-.carousel .list .item:nth-child(1) .content .buttons{
+.carousel .list .item:nth-child(1) .content .buttons,
+.buttons, 
+.author{
 display: none;
 }
 .carousel.prev .list .item:nth-child(2) .content .des,
-.carousel .list .item:nth-child(1) .content .des{
+.carousel .list .item:nth-child(1) .content .des,
+.des{
     font-size: 1em;
 }
 .carousel.prev .list .item:nth-child(2) .content .title,
-.carousel .list .item:nth-child(1) .content .title{
+.carousel .list .item:nth-child(1) .content .title,
+.title{
     font-size: 1.5em;
 }
 }
