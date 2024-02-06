@@ -481,13 +481,10 @@ header a{
     top: -0.7rem;
   }
   .arrows{
-    position: absolute;
     top: 3rem;
-    right: 15rem;
-    z-index: 100;
+    left: -5%;
     width: 300px;
     max-width: 30%;
-    display: flex;
     gap: 10px;
     align-items: center;
 }
@@ -519,14 +516,17 @@ header a{
     color: #f1683a;
 }
 .carousel .list .item:nth-child(1) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .buttons,
 .carousel .list .item:nth-child(1) .content .buttons{
 display: none;
 }
+.carousel.prev .list .item:nth-child(2) .content .des,
 .carousel .list .item:nth-child(1) .content .des{
     font-size: 1em;
 }
+.carousel.prev .list .item:nth-child(2) .content .title,
 .carousel .list .item:nth-child(1) .content .title{
     font-size: 1.5em;
-
 }
-
+}
