@@ -10,13 +10,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./index.html">Omniviewer</a>
-            <a href="./contact.html">Contacts</a>
-            <a href="./info.html">Info</a>
-        </nav>
-        <img src="./logo/Logo.png" class="logo">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href='/'>Home</a></li>
+              <li><a href='/'>Products</a></li>
+              <li><a href='/'>About</a></li>
+              <li><a href='/'>Services</a></li>
+              <li><a href='/'>Contact Us</a></li>
+            </ul>
+          </nav>
     </header>
 
 
@@ -156,6 +159,10 @@
 
     <div>
         <div class="play"></div>
+    </div>
+
+    <div>
+        <img src="./logo/Logo.png" class="logo">
     </div>
     
     <script src="app.js"></script>

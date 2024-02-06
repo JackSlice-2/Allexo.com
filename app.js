@@ -8,7 +8,7 @@ let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 for(let i = 0; i < thumbnailItemsDom.length; i++) {
     thumbnailItemsDom[i].addEventListener('click', () => {
         showSlider(i);
-    });
+    });     
 }
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
@@ -43,6 +43,10 @@ function showSlider(type){
         carouselDom.classList.remove('prev');
     }, timeRunning);
 }
+
+
+
+
 
 
 // Get references to the video and play div elements
@@ -81,3 +85,16 @@ video.addEventListener('ended', function() {
  // Hide the video
  video.style.display = "none";
 });
+
+
+
+
+function updatemenu() {
+    if (document.getElementById('responsive-menu').checked == true) {
+      document.getElementById('menu').style.borderBottomRightRadius = '0';
+      document.getElementById('menu').style.borderBottomLeftRadius = '0';
+    }else{
+      document.getElementById('menu').style.borderRadius = '10px';
+    }
+  }
+  
