@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 .parallax{
     position: relative;
@@ -19,34 +18,35 @@
     background-position: right;
     background-size: cover;
 }
-
 .imgObjects:nth-child(1) {
-    background-image: url(iot.png);
+    background-image: url(img/6.png);
 }
 .imgObjects:nth-child(2) {
-    background-image: url(img/2.png);
-
-    top: -1.5%;
+    background-image: url(img/4.png);
+    background-size: 13% 39%;
+    background-repeat: no-repeat;
+    top: -30%;
+    left: -30%;
 }
 .imgObjects:nth-child(3) {
     background-image: url(img/3.png);
-    top: 3%;
-    left: 5%;
+    background-size: 63% 62%;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: -30%;
 }
 .imgObjects:nth-child(4) {
-    background-image: url(img/4.png);
-    top: 4%;
-    left: 15%;
 }
 .imgObjects:nth-child(5) {
-    background-image: url(img/5.png);
-    background-size: 13% 22%;
+    background-image: url(img/2.png);
+    background-size: 45% 63%;
     background-repeat: no-repeat;
-    top: -30%;
-    left: -45%;
+    top: 15%;
+    left: -15%;
+    z-index: 1;
 }
 .imgObjects:nth-child(6) {
-    background-image: url(img/6.png);
+    background-image: url(img/.png);
     background-size: 13% 22%;
     background-repeat: no-repeat;
     top: 25%;
@@ -58,12 +58,14 @@
     //background-size: 1000px 700px;
     background-repeat: no-repeat;
     top: 3.8%;
+    left: 13%;
 }
 
 .textBox{
     justify-content: center;
     align-items: center;
-    color: red;
+    align-text: center;
+    color: silver;
     display: absolute;
     padding: 2%;
     margin: 1%;
@@ -74,17 +76,20 @@ h1{
     padding: 1%;
 }
 span{
-    color: green;
+    color: gold;
     font-size: 25px;
+    font-weight: bold;
     padding 1%;
 }
 article{
-    color: yellow;
+    color: silver;
     font-size: 25px;
+    font-weight: bold;
+
     padding:1%;
 }
 p{
     font-size: 15px;
-    color: grey;
+    color: darkgrey;
     padding: 1%;
 }
