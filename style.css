@@ -21,7 +21,7 @@ header{
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 100;
+    z-index: 9999999;
 }
 header a{
     color: #eee;

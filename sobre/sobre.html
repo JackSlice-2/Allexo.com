@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css" class="stylesheet">
+    <link rel="stylesheet" href="./../style.css" class="stylesheet">
+    <title>Sobre a Empresa</title>
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href='/'>Home</a></li>
+              <li><a href='/'>Produtos</a></li>
+              <li><a href='./Soluçoes/soluçoes.html'>Soluções</a></li>
+              <li><a href='./sobre/sobre.html'>Sobre</a></li>
+              <li><a href='./contact/contact.html'>Contato</a></li>
+            </ul>
+          </nav>
+    </header>    
+    <div class="parallax">
+        <div class="textBox">
+            <h1>Title</h1>
+            <span>Sub Title<article>SubTitle</article>Third Title</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum unde ex eaque, facere incidunt soluta odio numquam! 
+                Sed veritatis excepturi quaerat doloremque ut quasi tempore laudantium. Ratione eaque officia sunt?</p>
+        </div>
+    <div class="imgObjects"></div>
+    <div class="imgObjects"></div>
+    <div class="imgObjects"></div>
+    <div class="imgObjects"></div>
+    <div class="imgObjects"></div>
+    <div class="imgObjects"></div>
+    <div class="imgObjects"></div>
+    </div>
+    
+<script type="text/javascript">
+
+let parallax = document.querySelector(".parallax");
+let imgObjects = document.querySelectorAll(".imgObjects");
+
+parallax.onmousemove = function(e) {
+    let X = e.pageX;
+    let Y = e.pageY;
+
+    imgObjects[0].style.transform = "translate(" + X /  100 * -7 + "px," + Y /  100 * -7 + "px)";
+    imgObjects[1].style.transform = "translate(" + X /  100 * -6 + "px," + Y /  100 * -6 + "px)";
+    imgObjects[2].style.transform = "translate(" + X /  100 * -3 + "px," + Y /  100 * -3 + "px)";
+    imgObjects[3].style.transform = "translate(" + X /  100 * -1 + "px," + Y /  50 * -1 + "px)";
+    imgObjects[4].style.transform = "translate(" + X /  100 *  4 + "px," + Y /  100 *  4 + "px)";
+    imgObjects[5].style.transform = "translate(" + X /  100 *  7 + "px," + Y /  100 *  7 + "px)";
+    imgObjects[6].style.transform = "translate(" + X /  100 *  11 + "px," + Y /  100 *  11 + "px)";
+}
+</script>
+</body>
+</html>
