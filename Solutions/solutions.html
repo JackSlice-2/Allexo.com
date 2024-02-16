@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="solutions.css" class="stylesheet">
+    <link rel="stylesheet" href="./../style.css" class="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/'>Produtos</a></li>
+          <li><a href='./Soluçoes/soluçoes.html'>Soluções</a></li>
+          <li><a href='./sobre/sobre.html'>Sobre</a></li>
+          <li><a href='./contact/contact.html'>Contato</a></li>
+        </ul>
+      </nav>
+</header>
+ 
+    <div class="container">
+    <div id="backgroundCover"></div>
+    
+    <div class="services-section">
+      <h1 class="section-title">Soluçoes Allexo</h1>
+      <ul>
+            <li rel="one">
+                <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                    </div>
+                  </div>
+            </li>
+            <li rel="two"> 
+                <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                    </div>
+                  </div>
+             </li>
+            <li rel="three"> 
+                <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                    </div>
+                  </div>
+             </li>
+            <li rel="four"> 
+                <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                    </div>
+                  </div>
+             </li>
+            <li rel="five"> 
+                <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                    </div>
+                  </div>
+             </li>
+            <li rel="six"> 
+                <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-title">Web Designs</div>
+                    <div class="service-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                    </div>
+                  </div>
+             </li>
+        </ul>
+    </div>
+
+</div>
+</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $('ul li').hover(function(){
+          $('#backgroundCover').removeClass().addClass($(this).attr('rel'));
+          $(this).addClass('active').siblings().removeClass('active');
+      });
+  
+      // Event listener for clicking outside the li elements
+      $(document).on('click', function(event) {
+          // Check if the clicked target is not an li element
+          if (!$(event.target).closest('ul li').length) {
+              // Remove the 'active' class from all li elements
+              $('ul li').removeClass('active');
+              // Optionally, remove any other classes that were added on hover
+              $('#backgroundCover').removeClass();
+          }
+      });
+  </script>
+</body>
+</html>
