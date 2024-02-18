@@ -139,9 +139,8 @@ header a{
 .arrows{
     position: absolute;
     top: 30rem;
-    right: 65rem;
     z-index: 5;
-    width: 300px;
+    width: 50px;
     max-width: 30%;
     display: flex;
     gap: 10px;
@@ -479,7 +478,7 @@ header a{
     position: absolute;
     transition: all 150ms ease-out;
     width: 4em;
-    right: 1rem;
+    right: 1.5rem;
     top: -0.7rem;
   }
   .arrows{
