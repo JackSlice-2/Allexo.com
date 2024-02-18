@@ -8,6 +8,7 @@
     width: 100vw;
     background-image: url(img/1.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .imgObjects{
     position: absolute;
