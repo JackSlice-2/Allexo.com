@@ -17,17 +17,19 @@
     background-size: cover;
 }
 .contact .content {
-    max-width: 800px;
+    max-width: 850px;
     text-align: center;
+    padding-bottom: 50px;
 }
 .contact .content h2{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 500;
     color: #fff;
 }
 .contact .contact p{
     font-weight: 300;
     color: #fff;
+    font-size: 20px;
 }
 .container{
     width: 100%;
@@ -38,14 +40,16 @@
 .container .contactInfo {
     width: 50%;
     display: flex;
-    flex-direction:column
+    flex-direction:column;
 }
 .container .contactInfo .box{
     position: relative;
     padding: 2px 0;
+    
     display: flex;
+    width: 50%;
 }
-.container .contactInfo .box .icon{
+.contactInfo .box .icon{
     min-width: 60px;
     height: 60px;
     background: #fff;
@@ -54,6 +58,58 @@
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
+    color: #222;
+
+}
+.contactInfo .box::before{
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.contactInfo .box:nth-child(1)::before{
+    content: "\f041";
+    color: #d8504d;
+    border-bottom: 4px solid #d8504d;
+    min-width: 60px;
+}
+.contactInfo .box:nth-child(2)::before{
+    content: '\f095';
+    color: green;
+    border-bottom: 4px solid green;
+    min-width: 60px;
+}
+.contactInfo .box:nth-child(3)::before{
+    content: '\f0e0';
+    color: gold;
+    border-bottom: 4px solid gold;
+    min-width: 60px;
+}
+.contactInfo .box:nth-child(4)::before{
+    content: '\f232';
+    color: #25d366;
+    border-bottom: 4px solid #25d366;
+    min-width: 60px;
+}
+.contactInfo .box:nth-child(5)::before{
+    content: '\f2c6';
+    color: #0088cc;
+    border-bottom: 4px solid #0088cc;
+    min-width: 60px;
+}
+.contactInfo .box:hover::before{
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+
 }
 .container .contactInfo .box .text{
     display: flex;

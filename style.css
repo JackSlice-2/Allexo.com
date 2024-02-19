@@ -8,7 +8,6 @@ body{
     font-family: Poppins;
     font-size: 0.75em;
     caret-color: transparent;
-    overflow: hidden;
 }
 a{
     text-decoration: none;
