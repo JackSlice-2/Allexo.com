@@ -1,18 +1,63 @@
+let currentIndex =  0;
+const items = document.querySelectorAll('.carousel .list .item');
+const thumbnails = document.querySelectorAll('.carousel .thumbnail .item');
+const nextButton = document.getElementById('next');
+const prevButton = document.getElementById('prev');
+
+function showItem(index) {
+  items.forEach((item, i) => {
+    item.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+function showThumbnail(index) {
+  thumbnails.forEach((thumbnail, i) => {
+    thumbnail.style.opacity = i === index ? '1' : '0.5';
+  });
+}
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex +  1) % items.length;
+  showItem(currentIndex);
+  showThumbnail(currentIndex);
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex -  1 + items.length) % items.length;
+  showItem(currentIndex);
+  showThumbnail(currentIndex);
+});
+
+thumbnails.forEach((thumbnail, i) => {
+  thumbnail.addEventListener('click', () => {
+    currentIndex = i;
+    showItem(currentIndex);
+    showThumbnail(currentIndex);
+  });
+});
+
+// Show the first item on page load
+showItem(currentIndex);
+showThumbnail(currentIndex);
+
+
+
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
-
 let carouselDom = document.querySelector('.carousel');
 let SliderDom = carouselDom.querySelector('.carousel .list');
 let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-for(let i = 0; i < thumbnailItemsDom.length; i++) {
+let timeRunning =  1000;
+let runTimeOut;
+
+for(let i =  0; i < thumbnailItemsDom.length; i++) {
     thumbnailItemsDom[i].addEventListener('click', () => {
         showSlider(i);
     });     
 }
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 1000;
 
 nextDom.onclick = function(){
     showSlider('next');    
@@ -21,28 +66,25 @@ nextDom.onclick = function(){
 prevDom.onclick = function(){
     showSlider('prev');    
 }
-let runTimeOut;
-
 
 function showSlider(type){
-    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
     
     if(type === 'next'){
         SliderDom.appendChild(SliderItemsDom[0]);
         thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        carouselDom.classList.add('next');
     }else{
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-        carouselDom.classList.add('prev');
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length -  1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length -  1]);
     }
+    carouselDom.classList.add('next');
     clearTimeout(runTimeOut);
     runTimeOut = setTimeout(() => {
         carouselDom.classList.remove('next');
-        carouselDom.classList.remove('prev');
     }, timeRunning);
 }
+
 
 
 
