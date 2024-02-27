@@ -362,6 +362,18 @@ body{
 
 
 
+@media screen and (max-width: 678px) {
+    .carousel .list .item .content{
+        top: 5rem;
+        height: 80%;
+        left: 17rem;
+        font-weight: 400;
+        font-size: 16px;
+    }
+.carousel .list .item .content .title{
+    font-size: 30px;
+}
+
     /* thumbail */
 .thumbnail{
     position: absolute;
@@ -474,22 +486,7 @@ display: none;
         border-radius: 0;
     }
 }
-
-@media screen and (max-width: 678px) {
-        .carousel .list .item .content{
-            top: 5rem;
-            height: 80%;
-            left: 17rem;
-            font-weight: 400;
-            font-size: 16px;
-        }
-    .carousel .list .item .content .title{
-        font-size: 30px;
-    }}
-
-
-
-
+}
 
 
 
