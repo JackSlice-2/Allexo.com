@@ -22,17 +22,17 @@
     background-size: cover;
 }
 .imgObjects:nth-child(1) {
-    background-image: url(img/6.png);
+    background-image: url();
 }
 .imgObjects:nth-child(2) {
-    background-image: url(img/4.png);
+    background-image: url();
     background-size: 13% 39%;
     background-repeat: no-repeat;
     top: -30%;
     left: -30%;
 }
 .imgObjects:nth-child(3) {
-    background-image: url(img/3.png);
+    background-image: url(img/OilRigs.png);
     background-size: 63% 62%;
     background-repeat: no-repeat;
     top: 20%;
@@ -41,7 +41,7 @@
 .imgObjects:nth-child(4) {
 }
 .imgObjects:nth-child(5) {
-    background-image: url(img/2.png);
+    background-image: url(img/Workers.png);
     background-size: 45% 63%;
     background-repeat: no-repeat;
     top: 15%;
@@ -49,18 +49,18 @@
     z-index: 1;
 }
 .imgObjects:nth-child(6) {
-    background-image: url(img/.png);
+    background-image: url();
     background-size: 13% 22%;
     background-repeat: no-repeat;
     top: 25%;
     left: -2%;
 }
 .imgObjects:nth-child(7) {
-    background-image: url(img/7.png);
+    background-image: url(img/Building.png);
     background-size: 75% 100%;
     //background-size: 1000px 700px;
     background-repeat: no-repeat;
-    top: 3.8%;
+    top: 8%;
     left: 13%;
 }
 

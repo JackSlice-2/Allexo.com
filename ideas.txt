@@ -1,6 +1,0 @@
-put an arrow at bottom of services page main image has paralax effect
-no scrolling, page controlled by arrows 
-1st page arrow at bottom 
-second page arrow at top 
-aloowing click to scroll from paralax image hero to serviçes boxes who can open modals with info
-second part of page has no effect just boxes with the serviçes witch i click and open modals with info

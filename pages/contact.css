@@ -45,9 +45,10 @@
 .container .contactInfo .box{
     position: relative;
     padding: 2px 0;
-    
     display: flex;
     width: 50%;
+    padding-bottom: 15px;
+    background-color:rgba(0,  70,  104,  0.7);
 }
 .contactInfo .box .icon{
     min-width: 60px;
@@ -59,7 +60,6 @@
     border-radius: 50%;
     font-size: 22px;
     color: #222;
-
 }
 .contactInfo .box::before{
     font-family: FontAwesome;
@@ -191,5 +191,16 @@ transform: translate(-20);
     }
     .container .contactInfo{
         width: 100%
+    }
+    .contactForm{
+        width: 100%;
+    }
+    .container .contactInfo .box{
+        width: 80%;
+    }
+    .container .contactInfo .box .text{
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 500;
     }
 }
