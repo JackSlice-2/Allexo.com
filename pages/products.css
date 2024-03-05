@@ -34,7 +34,7 @@ body {
 }
 
 .slider {
-  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  background: url("img/Products.png") no-repeat center bottom;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   overflow: hidden;
 }
@@ -62,7 +62,7 @@ body {
 
 .sliderImg {
   z-index: 1;
-  max-width: 700px;
+  max-width: 630px;
 }
 
 .sliderTitle {
@@ -382,6 +382,10 @@ footer {
 .copyright{
   font-weight: 300;
   font-size: 14px;
+}
+.featureIcon {
+  font-size: 3em;
+  color: #369e62;
 }
 
 @media screen and (max-width:480px) {
