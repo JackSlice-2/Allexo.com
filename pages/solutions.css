@@ -3,6 +3,8 @@
 }
 .body{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 .container{
   display: grid;
@@ -34,7 +36,6 @@
     align-items: center;
     gap: 100px;
     padding-bottom: 10%;
-
 }
 .container ul li{
     position: relative;
