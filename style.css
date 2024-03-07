@@ -157,15 +157,6 @@ body{
 
 /*Play Button*/
 
-.logo { 
-    height: 6em;
-    margin: 20px auto;
-    position: absolute;
-    right: 4rem;
-    z-index: 10000;
-    cursor: pointer;
-    padding-top: 20px;
-  }
 .play { 
     background: red;
     border-radius: 50% / 10%;
