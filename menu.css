@@ -29,16 +29,18 @@ header a{
 #menu ul {
 	width: 100%;
 	text-align: left;
-    padding-left: 25%;
+    padding-left: 5%;
     display: flex;
     flex-direction: row;
 }
 #menu li {
-	display: inline-block;
+	display: flex;
 	position: relative;
 }
-#menu ul li#IOT {
-    order: -1;
+#menu ul li#iot-li {
+    order: 1;
+    padding-left: 75em;
+    justify-content: flex-end;
 }
 #menu a {
 	display: block;
