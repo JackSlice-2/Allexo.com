@@ -31,7 +31,7 @@ const products = [
     ],
     colors: [
       {
-        img: "./img/air.png",
+        img: "./img/Placas internas ALX1000.png",
       }
     ],
   },
