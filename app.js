@@ -1,4 +1,4 @@
-/**
+
 let currentIndex =  0;
 const items = document.querySelectorAll('.carousel .list .item');
 const thumbnails = document.querySelectorAll('.carousel .thumbnail .item');
@@ -40,9 +40,11 @@ thumbnails.forEach((thumbnail, i) => {
 // Show the first item on page load
 showItem(currentIndex);
 showThumbnail(currentIndex);
- */
+ 
 
 
+
+/*
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 let carouselDom = document.querySelector('.carousel');
@@ -85,6 +87,7 @@ function showSlider(type){
         carouselDom.classList.remove('next');
     }, timeRunning);
 }
+*/
 
 
 
