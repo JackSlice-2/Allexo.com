@@ -6,13 +6,14 @@ a{
 header{
     width: 100%;
     max-width: 100%;
-    margin: auto;
     height: 50px;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 9999999;
     background: black;
+    font-size: 0.75em;
+    margin: 0;
 }
 header a{
     margin-left: 40px;
@@ -51,7 +52,7 @@ header a{
 }
 #menu ul li#iot-li {
     order: 1;
-    padding-left: 75em;
+    padding-left: 750px;
     justify-content: flex-end;
 }
 #menu a {
