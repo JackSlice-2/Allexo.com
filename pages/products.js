@@ -7,6 +7,15 @@ const products = [
     id: 1,
     title: "Gateway",
     price: 0,
+    desc: `A linha de gateways ALX-1000 foi projetada para ser totalmente modular visando atender a grande variedade de aplicações
+    de telemetria de máquinas, equipamentos e processos. Com diversas opções de conectividade e ampla capacidade modular com
+    entradas e saídas digitais e analógicas incorporadas, o gateway ALX-1000 pode ao mesmo tempo comunicar com dispositivos que
+    possuam comunicação MODBUS RTU, MODBUS TCP/IP e receber sinais de sensores discretos de campo.
+    Utilizando protocolo MQTT para envio de dados criptografados, o gateway ALX-1000 funciona como um datalogger registrando em
+    memória de massa os dados coletados mesmo quando a comunicação com o servidor está indisponível, enviando sincronamente
+    os dados registrados após a restabelecimento da comunicação.
+    Possui bateria interna de lítio recarregável que permite o funcionamento em caso de falta de energia com envio automático de alerta
+    em caso de falha na alimentação externa.`,
     features: [
       {
         title: "Redes de Campo",
@@ -39,6 +48,10 @@ const products = [
     id: 2,
     title: "IOTHINGS",
     price: 149,
+    desc: `A plataforma IoTHINGS foi desenvolvida para ser um portal de automação IoT concentrando informações de diversos tipos de modelos de equipamentos de diferentes fabricantes em uma única solução.
+    Utilizando algoritmos de Inteligência Artificial e Machine Learning a plataforma IoTHINGS analisa em tempo real os dados coletados
+    gerando avisos e alarmes quando alguma condição anormal é detectada enviando mensagens por e-mail, SMS, Telegram e Whatsapp.
+    Possibilita a criação de dashboards personalizados para cada usuário de acordo com as informações de interesse, permitindo ainda o envio de telecomandos para os equipamentos de campo caso o usuário tenha permissão de acordo com o seu perfil.`,
     features: [
       {
         title: "Gestão de Energia",
@@ -83,7 +96,7 @@ const currentProductColors = document.querySelectorAll(".color");
 const currentProductSizes = document.querySelectorAll(".size");
 const currentProductFeatureTitles = document.querySelectorAll(".featureTitle");
 const currentProductFeatureIcons = document.querySelectorAll(".featureIcon");
-
+const currentProductDesc = document.querySelector(".productDesc");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -97,6 +110,7 @@ menuItems.forEach((item, index) => {
     currentProductTitle.textContent = choosenProduct.title;
     currentProductPrice.textContent = "$" + choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
+    currentProductDesc.textContent = choosenProduct.desc;
 
     //assing new colors
     currentProductColors.forEach((color, index) => {
