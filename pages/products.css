@@ -12,6 +12,8 @@ body {
 .navTop {
   display: flex;
   align-items: center;
+  margin-right: 54px;
+  margin-top: 15px;
   justify-content: space-between;
 }
 
