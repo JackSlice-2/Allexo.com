@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="generators.css" class="stylesheet">
     <link rel="stylesheet" href="../style.css" class="stylesheet">
     <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="modals.css">
 
     <title>Document</title>
 </head>
@@ -27,11 +28,15 @@
         <p>Monitore em tempo real o funcionamento de sua frota recebendo automaticamente alertas quando algum problema ou mau funcionamento for detectado. Saiba quando e por quanto tempo o gerador entrou em funcionamento e acompanhe o histórico de desempenho de cada máquina individualmente. Compartilhe com os seus clientes a monitoração dos geradores locados através acesso exclusivo via celular.</p>
     </div>
 
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
 
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/1.jpg" alt="">
+                <img class="myImg" src="./images/1.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Redução de Custos Operacionais</h2>
@@ -58,7 +63,7 @@
                     <a href="https://www.google.com" class="button">Read More</a>
             </div>
             <div class="image">
-                <img src="./images/2.png" alt="">
+                <img class="myImg" src="./images/2.png" alt="">
             </div>
         </section>
     </div>
@@ -67,7 +72,7 @@
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/3.jpg" alt="">
+                <img class="myImg" src="./images/3.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Diferencial competitivo ...</h2>
@@ -95,7 +100,7 @@
                     <a href="https://www.google.com" class="button">Read More</a>
             </div>
             <div class="image">
-                <img src="./images/4.jpg" alt="">
+                <img class="myImg" src="./images/4.jpg" alt="">
             </div>
         </section>
     </div>
@@ -104,9 +109,9 @@
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/41.png" alt="">
-                <img src="./images/42.png" alt="">
-                <img src="./images/43.png" alt="">            
+                <img class="myImg" src="./images/41.png" alt="">
+                <img class="myImg" src="./images/42.png" alt="">
+                <img class="myImg" src="./images/43.png" alt="">            
             </div>
             <div class="content">
                 <h2>Melhor controle Sobre o contrato de locação</h2>
@@ -136,7 +141,7 @@
                     <a href="https://www.google.com" class="button">Read More</a>
             </div>
             <div class="image">
-                <img src="./images/6.jpg" alt="">
+                <img class="myImg" src="./images/6.jpg" alt="">
             </div>
         </section>
     </div>
@@ -145,7 +150,7 @@
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/7.jpg" alt="">
+                <img class="myImg" src="./images/7.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Única plataforma ...</h2>
@@ -158,5 +163,6 @@
             </div>
         </section>
     </div>
+    <script src="modals.js"></script>
 </body>
 </html>

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="generators.css" class="stylesheet">
     <link rel="stylesheet" href="../menu.css">
-
     <link rel="stylesheet" href="../style.css" class="stylesheet">
+    <link rel="stylesheet" href="modals.css">
     <title>Document</title>
 </head>
 <header>
@@ -27,11 +27,15 @@
         <p>Através da plataforma IoTHINGS acompanhe em tempo real o perfil de consumo de suas instalações com rateio por máquinas e equipamentos bem como a produção de energia de suas plantas fotovoltaicas. Verifique se o seu contrato com a concessionária está adequado bem como receba do módulo de Inteligência Artificial de nossa plataforma sugestões para reduzir o custo da energia ou evitar pagar multa por demanda ou baixo fator de potência.</p>
     </div>
 
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
 
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/Instalações de Captação de Água.jpg" alt="">
+                <img class="myImg" src="./images/Instalações de Captação de Água.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Instalações de Captação de Água</h2>
@@ -64,7 +68,7 @@
                     <a href="https://www.google.com" class="button">Documentation.pdf</a>
             </div>
             <div class="image">
-                <img src="./images/Monitoração de Barragens.jpg" alt="">
+                <img class="myImg" src="./images/Monitoração de Barragens.jpg" alt="">
             </div>
         </section>
     </div>
@@ -72,7 +76,7 @@
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/Telemetria de Reservatórios.jpg" alt="">
+                <img class="myImg" src="./images/Telemetria de Reservatórios.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Telemetria de Reservatórios</h2>
@@ -104,7 +108,7 @@
                     <a href="https://www.google.com" class="button">Documentation.pdf</a>
             </div>
             <div class="image">
-                <img src="./images/Monitoração de VRPs.jpg" alt="">
+                <img class="myImg" src="./images/Monitoração de VRPs.jpg" alt="">
             </div>
         </section>
     </div>
@@ -112,7 +116,7 @@
     <div class="container">
         <section class="box">
             <div class="image">
-                <img src="./images/Integração com outros sistemas.png" alt="">          
+                <img class="myImg" src="./images/Integração com outros sistemas.png" alt="">          
             </div>
             <div class="content">
                 <h2>Integração com outros sistemas</h2>
@@ -126,5 +130,6 @@
             </div>
         </section>
     </div>
+    <script src="modals.js"></script>
 </body>
 </html>
