@@ -118,10 +118,10 @@ header a{
         float:none;
         width:auto;
     }
-	#menu input, #menu label {
+	#menu input {
         position:absolute;
         top:0;
-        left:0;
+        left:45px;
         display:block
     }
 	#menu input {
@@ -139,7 +139,10 @@ header a{
     }
     #menu label {
         transform: scale(3);
-        left: -40px;
+        position:absolute;
+        top:0;
+        left:10px;
+        display:block
     }
 }
 

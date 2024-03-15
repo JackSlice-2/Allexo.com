@@ -133,7 +133,7 @@ body{
     font-weight: 300;
 }
 /* arrows */
-.arrows{
+/* .arrows{
     position: absolute;
     top: 30rem;
     z-index: 5;
@@ -157,7 +157,7 @@ body{
 .arrows button:hover{
     background-color: #fff;
     color: #000;
-}
+} */
 
 /*Play Button*/
 
