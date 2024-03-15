@@ -55,6 +55,10 @@ header a{
     padding-left: 750px;
     justify-content: flex-end;
 }
+#iot-li img {
+    width: 30px;
+    height: 30px;
+}
 #menu a {
 	display: block;
 	line-height: 45px;
