@@ -55,7 +55,7 @@ body{
     border:  1px solid #ddd; /* Light grey border for boxes */
     padding:  20px;
     background-color: #f9f9f9; /* Slightly lighter grey for box background */
-    border-radius:  5px; /* Rounded corners for boxes */
+    border-radius:  5px;
 }
 
 .image {
@@ -68,7 +68,7 @@ body{
     height: auto;
     display: block;
     transition: 0.5s ease;
-    border-radius:  5px; /* Rounded corners for images */
+    border-radius:  5px;
 }
 
 .image:hover img{

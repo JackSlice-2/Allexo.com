@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .navTop {
@@ -73,35 +74,6 @@ body {
   z-index: 1;
 }
 
-.sliderPrice {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  font-size: 60px;
-  font-weight: 300;
-  text-align: center;
-  color: white;
-  border: 1px solid gray;
-  z-index: 1;
-}
-
-.buyButton {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  font-size: 30px;
-  font-weight: 900;
-  color: white;
-  border: 1px solid gray;
-  background-color: black;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.buyButton:hover {
-  background-color: white;
-  color: black;
-}
 
 .sliderItem:nth-child(1) .sliderBg {
   background-color: #369e62;
@@ -134,7 +106,6 @@ body {
 .sliderItem:nth-child(5) .sliderPrice {
   color: cornsilk;
 }
-
 .features {
   display: flex;
   align-items: center;
@@ -386,17 +357,10 @@ footer {
   color: #369e62;
 }
 
-@media screen and (max-width:480px) {
-
-
-  .search{
-    display: none;
-  }
-
+@media screen and (max-width:680px) {
   .navBottom{
     flex-wrap: wrap;
   }
-
   .menuItem{
     margin: 20px;
     font-weight: 700;
@@ -417,39 +381,52 @@ footer {
   }
 
   .sliderTitle{
-    display: none;
+    font-size: 40px;
   }
-
   .sliderPrice{
     top: unset;
     bottom: -50;
     left: 0;
     background-color: lightgrey;
   }
-
   .buyButton{
     right: 0;
     top: 0;
   }
-
-  .features{
+  .features {
     flex-direction: column;
+    padding: 20px;
   }
-
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .featureTitle {
+    color: white;
+  }
+  .featureDesc {
+    display: none;
+  }
   .product{
     clip-path: none ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: whitesmoke;
   }
-
   .productImg{
     width: 80%;
+    cursor: pointer;
   }
-
+  .productImg:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+  }
   .productDetails{
     width: 100%;
-    padding: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,7 +434,6 @@ footer {
     position: relative;
     top: 0;
   }
-
   .productTitle{
     font-size: 50px;
     margin: 0;
@@ -490,10 +466,5 @@ footer {
     width: 90%;
     align-items: center;
     background-color: whitesmoke;
-  }
-
-  .payment{
-    width: 90%;
-    padding: 20px;
   }
 }
