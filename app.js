@@ -11,12 +11,29 @@ function showItem(index) {
   });
 }
 
+thumbnails.forEach((thumbnail, i) => {
+  thumbnail.addEventListener('click', () => {
+    currentIndex = i;
+    showItem(currentIndex);
+    //showThumbnail(currentIndex);
+  });
+});
+
+// Show the first item on page load
+showItem(currentIndex);
+//showThumbnail(currentIndex);
+ 
+
+
+/* OPACITY IN THUMBNAILS on/off
 function showThumbnail(index) {
   thumbnails.forEach((thumbnail, i) => {
     thumbnail.style.opacity = i === index ? '1' : '0.5';
   });
 }
+*/
 
+/* NEXT/PREV Buttons
 nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex +  1) % items.length;
   showItem(currentIndex);
@@ -28,19 +45,8 @@ prevButton.addEventListener('click', () => {
   showItem(currentIndex);
   showThumbnail(currentIndex);
 });
+*/
 
-thumbnails.forEach((thumbnail, i) => {
-  thumbnail.addEventListener('click', () => {
-    currentIndex = i;
-    showItem(currentIndex);
-    showThumbnail(currentIndex);
-  });
-});
-
-// Show the first item on page load
-showItem(currentIndex);
-showThumbnail(currentIndex);
- 
 
 
 
