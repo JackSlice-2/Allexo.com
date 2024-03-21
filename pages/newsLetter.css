@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1557683316-973673baf926') no-repeat center center/cover;
+    height: 100vh;
+}
+.container {
+    background-size: cover;
+    padding: 200px 40px;
+    text-align: center;
+    color: white;
+}
+.container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container p {
+    max-width: 50%;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+.emailBox {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.emailBox i {
+    background-color: #2f3542;
+    width: 60px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    align-self: center;
+
+}
+.textBox, .btn {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+.textBox {
+    width: 0px;
+    transition: 0.6s;
+}
+.emailBox:hover > .textBox, .textBox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.btn{
+    background-color: #2f3542;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 20px;
+}
