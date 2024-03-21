@@ -78,11 +78,15 @@ body{
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    cursor: pointer;
+    pointer-events: auto;
 }
-.carousel .list .item .buttons button:nth-child(2){
+.carousel .list .item .buttons button{
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 /* thumbail */
@@ -301,11 +305,11 @@ body{
 
 /* prev click */
 
-.carousel.prev .list .item:nth-child(2){
+.carousel.prev .list .item{
     z-index: 2;
 }
 
-.carousel.prev .list .item:nth-child(2) img{
+.carousel.prev .list .item img{
     animation: outFrame 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
@@ -326,15 +330,11 @@ body{
     opacity: 0;
     animation: showThumbnail .5s linear 1 forwards;
 }
-.carousel.next .arrows button,
-.carousel.prev .arrows button{
-    pointer-events: none;
-}
-.carousel.prev .list .item:nth-child(2) .content .author,
-.carousel.prev .list .item:nth-child(2) .content .title,
-.carousel.prev .list .item:nth-child(2) .content .topic,
-.carousel.prev .list .item:nth-child(2) .content .des,
-.carousel.prev .list .item:nth-child(2) .content .buttons
+.carousel.prev .list .item .content .author,
+.carousel.prev .list .item .content .title,
+.carousel.prev .list .item .content .topic,
+.carousel.prev .list .item .content .des,
+.carousel.prev .list .item .content .buttons
 {
     animation: contentOut 1.5s linear 1 forwards!important;
 }
@@ -416,7 +416,7 @@ body{
 .topic{
     color: #f1683a;
 }
-.carousel.prev .list .item:nth-child(2) .content .title,
+.carousel.prev .list .item .content .title,
 .carousel .list .item .content .title,
 .title{
 }

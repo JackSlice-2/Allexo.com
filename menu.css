@@ -52,12 +52,8 @@ header a{
 }
 #menu ul li#iot-li {
     order: 1;
-    padding-left: 750px;
+    padding-left: 1000px;
     justify-content: flex-end;
-}
-#iot-li img {
-    width: 30px;
-    height: 30px;
 }
 #menu a {
 	display: block;
