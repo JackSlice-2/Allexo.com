@@ -5,27 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="remoteManegement.css" class="stylesheet">
     <link rel="stylesheet" href="../style.css" class="stylesheet">
-    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../Globals/menu/menu.css">
     <link rel="stylesheet" href="modals.css">
     <title>Document</title>
 </head>
 
-<header>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-            <li><a href='/'>Home</a></li>
-            <li><a href='../pages/products.html'>Produtos</a></li>
-            <li><a href='../pages/solutions.html'>Soluções</a></li>
-            <li><a href='../pages/about.html'>Sobre</a></li>
-            <li><a href='../pages/contact.html'>Contato</a></li>
-            <li id="iot-li">
-                <a href='https://www.iot.allexo.com.br'>
-                  <img src="../logo/favicon.ico">
-                  IoTHINGS Login</a></li>
-            </ul>
-          </nav>
-</header>
+<header-element></header-element>
 
 <body>
     <div class="heading">
@@ -48,7 +33,7 @@
                 <h2>Instalações de Captação de Água</h2>
                 <p>Os gateways da Allexo possuem canais de comunicação RS-232, RS-485 e ETHERNET permitindo interligação a diversos equipamentos de campo com comunicação no padrão aberto MODBUS RTU ou TCP/IP. Através de exclusiva tecnologia DCloud, os drivers de comunicação desenvolvidos podem ser carregados dinamicamente via internet. Novos drivers podem ser desenvolvidos por nossa equipe de P&D caso seja necessário.
                     </p>
-                    <a href="https://www.google.com" class="button">Documentation.pdf</a>
+                    <a href="../pages/contact.html" class="button">Read More</a>
             </div>
         </section>
     </div>
@@ -60,7 +45,7 @@
                 <h2>Monitoração de Barragens</h2>
                 <p>Os gateways da linha ALX-1000 possuem capacidade modular com inúmeras combinações de entradas e saídas, digitais e analógicas para interligação com sensores de campo como sensores de vazão, nível, temperatura entre outros sinais discretos de campo;
                     </p>
-                    <a href="https://www.google.com" class="button">Documentation.pdf</a>
+                    <a href="../pages/contact.html" class="button">Read More</a>
             </div>
             <div class="image">
                 <img class="myImg" src="./images/gerenciamento2.jpg" alt="">
@@ -68,5 +53,6 @@
         </section>
     </div>
     <script src="modals.js"></script>
+    <script src="../Globals/menu/menu.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 body{
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
 }
 .parallax{
     position: absolute;
@@ -88,7 +91,7 @@ article{
 
     padding:1%;
 }
-p{
+.subtitle p{
     font-size: 15px;
     color: darkgrey;
     padding: 1%;

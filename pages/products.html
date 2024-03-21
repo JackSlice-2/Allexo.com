@@ -8,38 +8,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../Globals/menu/menu.css">
     <link rel="stylesheet" href="../modals/modals.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <title>Products</title>
 </head>
 
-<header>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-          <li><a href='/'>Home</a></li>
-          <li><a href='./products.html'>Produtos</a></li>
-          <li><a href='./solutions.html'>Soluções</a></li>
-          <li><a href='./about.html'>Sobre</a></li>
-          <li><a href='./contact.html'>Contato</a></li>
-          <li id="iot-li">
-            <a href='https://www.iot.allexo.com.br'>
-              <img src="../logo/favicon.ico">
-              IoTHINGS Login</a></li>
-    </nav>
-</header>
+<header-element></header-element>
+
 <body>
 
     <div id="nav">
-        <div class="navTop">
-            <div class="navItem">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="navItem">
-                <img src="../logo/Logo2.png" alt="">
-            </div>
-        </div>
         <div class="navBottom">
             <h3 class="menuItem">Hardware</h3>
             <h3 class="menuItem">Software</h3>
@@ -168,6 +147,7 @@
         </div>
     </footer>
     <script src="./products.js"></script>
+    <script src="../Globals//menu//menu.js"></script>
     <script src="../modals/modals.js"></script>
     <script src="../Globals/modals/modals.js"></script>
 </body>

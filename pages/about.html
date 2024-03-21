@@ -5,26 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css" class="stylesheet">
     <link rel="stylesheet" href="./../style.css" class="stylesheet">
-    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../Globals/menu/menu.css">
 
     <title>Sobre a Empresa</title>
 </head>
-<header>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-          <li><a href='/'>Home</a></li>
-          <li><a href='./products.html'>Produtos</a></li>
-          <li><a href='./solutions.html'>Soluções</a></li>
-          <li><a href='./about.html'>Sobre</a></li>
-          <li><a href='./contact.html'>Contato</a></li>
-          <li id="iot-li">
-            <a href='https://www.iot.allexo.com.br'>
-              <img src="../logo/favicon.ico">
-              IoTHINGS Login</a></li>
-        </ul>
-    </nav>
-</header>
+
+<header-element></header-element>
+
 <body>
     <div class="parallax">
         <div class="textBox">
@@ -67,5 +54,6 @@ parallax.onmousemove = function(e) {
     imgObjects[6].style.transform = "translate(" + X /  100 *  11 + "px," + Y /  100 *  11 + "px)";
 }
 </script>
+<script src="../Globals/menu/menu.js"></script>
 </body>
 </html>

@@ -5,29 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allexø</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="/Globals/menu/menu.css">
     <link rel="shortcut icon" type="image/icon" href="./logo/favicon.ico"/>
     <link href="/path/to/output.css" rel="stylesheet"/>
 </head>
 
-    <header>
-        <nav id='menu'>
-            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-            <ul>
-              <li><a href='/'>Home</a></li>
-              <li><a href='./pages/products.html'>Produtos</a></li>
-              <li><a href='./pages/solutions.html'>Soluções</a></li>
-              <li><a href='./pages/about.html'>Sobre</a></li>
-              <li><a href='./pages/contact.html'>Contato</a></li>
-              <li id="iot-li">
-                <a href='http://iot.allexo.com.br'>
-                  IoTHINGS Login</a></li>
-            </ul>
-        </nav>
-        <div>
-            <img src="./logo/Logo2.png" class="logo">
-        </div>
-    </header>
+<header-element></header-element>
 
     <body class="index">
     <div class="carousel">
@@ -183,5 +166,6 @@ energia ou evitar pagar multa por demanda ou baixo fator de potência. </div>
     </div>
 
     <script src="app.js"></script>
+    <script src="/Globals/menu/menu.js"></script>
 </body>
 </html>
