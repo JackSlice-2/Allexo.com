@@ -6,7 +6,6 @@ const products = [
   {
     id: 1,
     title: "Gateway",
-    price: 0,
     desc: `A linha de gateways ALX-1000 foi projetada para ser totalmente modular visando atender a grande variedade de aplicações
     de telemetria de máquinas, equipamentos e processos. Com diversas opções de conectividade e ampla capacidade modular com
     entradas e saídas digitais e analógicas incorporadas, o gateway ALX-1000 pode ao mesmo tempo comunicar com dispositivos que
@@ -47,7 +46,6 @@ const products = [
   {
     id: 2,
     title: "IOTHINGS",
-    price: 149,
     desc: `A plataforma IoTHINGS foi desenvolvida para ser um portal de automação IoT concentrando informações de diversos tipos de modelos de equipamentos de diferentes fabricantes em uma única solução.
     Utilizando algoritmos de Inteligência Artificial e Machine Learning a plataforma IoTHINGS analisa em tempo real os dados coletados
     gerando avisos e alarmes quando alguma condição anormal é detectada enviando mensagens por e-mail, SMS, Telegram e Whatsapp.
@@ -78,11 +76,7 @@ const products = [
       {
         code: "lightgray",
         img: "./img/jordan.png",
-      },
-      {
-        code: "green",
-        img: "./img/jordan2.png",
-      },
+      }
     ],
   }
 ];
@@ -91,7 +85,6 @@ let choosenProduct = products[0];
 
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
-const currentProductPrice = document.querySelector(".productPrice");
 const currentProductColors = document.querySelectorAll(".color");
 const currentProductSizes = document.querySelectorAll(".size");
 const currentProductFeatureTitles = document.querySelectorAll(".featureTitle");
@@ -108,7 +101,6 @@ menuItems.forEach((item, index) => {
 
     //change texts of currentProduct
     currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = "$" + choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
     currentProductDesc.textContent = choosenProduct.desc;
 
@@ -162,3 +154,5 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
+

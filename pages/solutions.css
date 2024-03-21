@@ -26,6 +26,7 @@ body {
 .services {
   margin: 90px auto;
   text-align: center;
+  gap:100px;
 }
 .paragraph p {
   font-family: sans-serif;
@@ -64,7 +65,6 @@ h1::after {
   border-radius: 10px;
   margin-bottom: 30px;
   padding: 5px;
-  grid-gap: 10px;
 }
 .col-md-5:hover {
   box-shadow: 5px 7px 9px #f8b400;

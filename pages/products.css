@@ -3,8 +3,8 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Lato", sans-serif;
+body{
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -39,6 +39,9 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.sliderItem:nth-of-type(2) img {
+  transform: scale(1.5);
 }
 
 .sliderBg {
@@ -123,7 +126,7 @@ body {
 }
 
 .featureDesc {
-  color: gray;
+  color: white;
   width: 50%;
   height: 100px;
 }
@@ -346,6 +349,7 @@ footer {
   font-size: 3em;
   color: #369e62;
 }
+
 @media screen and (max-width:680px) {
   .navBottom{
     flex-wrap: wrap;
