@@ -203,7 +203,7 @@ transform: translate(-20);
     margin-bottom: 20px;
     text-align: center;
 }
-.checkboxContainer {
+.radioContainer {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -211,7 +211,7 @@ transform: translate(-20);
     gap: 30%;
 }
 
-.checkboxContainer input[type="checkbox"] {
+.radioContainer input[type="radio"] {
     margin-right: 5px;
 }
 
