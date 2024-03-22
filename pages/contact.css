@@ -225,6 +225,10 @@ transform: translate(-20);
 .number {
     width: 73%; 
 }
+.titleWrapper {
+    padding: 10px;
+    text-align: center;
+}
 
 @media (max-width: 991px){
     body{

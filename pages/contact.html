@@ -60,7 +60,10 @@
 
             <div class="contactForm">
                 <form name="contact" method="POST" data-netlify="true">
-                    <h2>Envie Sua Mensagem</h2>
+                    <div class="titleWrapper">
+                        <h2>Entre em contato</h2>
+                        <p>Por favor preencha os campos abaixo para podermos entrar em contato.</p>
+                    </div>
             
                     <div class="inputBox">
                         <input type="text" name="name" required>
@@ -87,19 +90,20 @@
                         <h3>Selecione um das Opçoes abaixo:</h3>
                         <div class="checkboxContainer">
                             <div>
-                                <input type="checkbox" id="budget" name="Subject" value="Budget">
+                                <input type="checkbox" id="budget" name="SubjectOption" value="Budget">
                                 <label for="budget">Orçamento</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="other" name="Subject" value="Other">
+                                <input type="checkbox" id="other" name="SubjectOption" value="Other">
                                 <label for="other">Outro</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="tech" name="Subject" value="Tech Support">
+                                <input type="checkbox" id="tech" name="SubjectOption" value="Tech Support">
                                 <label for="tech">Support Técnico</label>
                             </div>
-                           
                         </div>
+                        <!-- Hidden input to store the selected subject -->
+                        <input type="hidden" id="subject" name="Subject" value="">
                     </div>
             
                     <div class="inputBox">
