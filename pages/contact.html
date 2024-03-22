@@ -90,15 +90,15 @@
                         <h3>Selecione um das Opçoes abaixo:</h3>
                         <div class="checkboxContainer">
                             <div>
-                                <input type="checkbox" id="budget" name="SubjectOption" value="Budget">
+                                <input type="checkbox" id="budget" name="SubjectOption" value="">
                                 <label for="budget">Orçamento</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="other" name="SubjectOption" value="Other">
+                                <input type="checkbox" id="other" name="SubjectOption" value="">
                                 <label for="other">Outro</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="tech" name="SubjectOption" value="Tech Support">
+                                <input type="checkbox" id="tech" name="SubjectOption" value="">
                                 <label for="tech">Support Técnico</label>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
             checkboxes.forEach(function(checkbox) {
                 checkbox.addEventListener('change', function() {
                     if (this.checked) {
-                        subjectInput.value = "Subject: " + this.value;
+                        subjectInput.value = this.value;
                     } else {
                         subjectInput.value = "";
                     }
