@@ -12,11 +12,15 @@ body{
     padding: 200px 40px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 .container h1 {
+    width: 1000px;
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    text-align: center;
 }
 .container p {
     max-width: 50%;
