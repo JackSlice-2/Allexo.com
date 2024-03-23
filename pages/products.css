@@ -133,6 +133,7 @@ body{
 }
 
 .product {
+  padding: 50px;
   height: 100vh;
   background-color: whitesmoke;
   position: relative;
@@ -290,6 +291,7 @@ label {
 
 footer {
   display: flex;
+  color: white;
 }
 
 .footerLeft {
