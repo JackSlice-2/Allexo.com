@@ -4,10 +4,10 @@
     box-sizeing: border-box;
 }
 body{
-    background-color: #000;
     color: #eee;
     font-family: Poppins;
     caret-color: transparent;
+    background: url('https://images.unsplash.com/photo-1557683316-973673baf926') no-repeat center center/cover;
 }
 .heading{
     width: 90%;
