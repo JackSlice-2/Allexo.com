@@ -44,19 +44,19 @@ body{
     max-width:  1200px;
     margin:  40px auto;
     padding:  20px;
-    background-color: #fff; /* White container */
-    border:  1px solid #ddd; /* Light grey border */
-    border-radius:  5px; /* Rounded corners */
+    background-color: #fff;
+    border:  1px solid #ddd;
+    border-radius:  5px; 
 }
 
 .box {
     display: flex;
     flex-wrap: wrap;
     margin-bottom:  20px;
-    border:  1px solid #ddd; /* Light grey border for boxes */
+    border:  1px solid #ddd;
     padding:  20px;
-    background-color: #f9f9f9; /* Slightly lighter grey for box background */
-    border-radius:  5px; /* Rounded corners for boxes */
+    background-color: #f9f9f9;
+    border-radius:  5px;
 }
 
 .image {
@@ -69,7 +69,7 @@ body{
     height: auto;
     display: block;
     transition: 0.5s ease;
-    border-radius:  5px; /* Rounded corners for images */
+    border-radius:  5px;
 }
 
 .image:hover img{
@@ -88,21 +88,21 @@ body{
 .content p {
     font-size:  16px;
     margin-bottom:  20px;
-    color: #666; /* Dark grey text */
+    color: #666;
 }
 
 .button {
     display: inline-block;
     padding:  10px  20px;
     color: #fff;
-    background-color: #333; /* Dark grey button */
-    border-radius:  5px; /* Rounded corners for button */
+    background-color: #333;
+    border-radius:  5px; 
     text-decoration: none;
     transition: background-color  0.3s ease;
 }
 
 .button:hover {
-    background-color: #555; /* Slightly lighter grey on hover */
+    background-color: #555;
 }
 
 /* Media Queries for Responsive Design */

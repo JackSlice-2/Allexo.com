@@ -42,6 +42,12 @@ const products = [
         img: "./img/Placas internas ALX1000.png",
       }
     ],
+    images: [
+      "./img/DETALHA PROCESSADOR.png",
+      "./img/WEB SERVER.png",
+      "./img/módulos IO.png",
+      "./img/GPS.png"
+    ]
   },
   {
     id: 2,
@@ -78,6 +84,12 @@ const products = [
         img: "./img/jordan.png",
       }
     ],
+    images: [
+      "./img/GPS.png",
+      "./img/GPS.png",
+      "./img/GPS.png",
+      "./img/GPS.png"
+    ]
   }
 ];
 
@@ -122,6 +134,12 @@ menuItems.forEach((item, index) => {
     // update feature icons
     currentProductFeatureIcons.forEach((featureIcon, index) => {
       featureIcon.className = choosenProduct.features[index].icon + " featureIcon";
+    });
+
+    // change images of currentProduct
+    const productImages = document.querySelectorAll(".product-image");
+    productImages.forEach((img, imgIndex) => {
+      img.src = choosenProduct.images[imgIndex];
     });
   });
 });
