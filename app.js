@@ -15,88 +15,9 @@ thumbnails.forEach((thumbnail, i) => {
   thumbnail.addEventListener('click', () => {
     currentIndex = i;
     showItem(currentIndex);
-    //showThumbnail(currentIndex);
   });
 });
-
-// Show the first item on page load
 showItem(currentIndex);
-//showThumbnail(currentIndex);
- 
-
-
-/* OPACITY IN THUMBNAILS on/off
-function showThumbnail(index) {
-  thumbnails.forEach((thumbnail, i) => {
-    thumbnail.style.opacity = i === index ? '1' : '0.5';
-  });
-}
-*/
-
-/* NEXT/PREV Buttons
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex +  1) % items.length;
-  showItem(currentIndex);
-  showThumbnail(currentIndex);
-});
-
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex -  1 + items.length) % items.length;
-  showItem(currentIndex);
-  showThumbnail(currentIndex);
-});
-*/
-
-
-
-
-/*
-let nextDom = document.getElementById('next');
-let prevDom = document.getElementById('prev');
-let carouselDom = document.querySelector('.carousel');
-let SliderDom = carouselDom.querySelector('.carousel .list');
-let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-let timeRunning =  1000;
-let runTimeOut;
-
-for(let i =  0; i < thumbnailItemsDom.length; i++) {
-    thumbnailItemsDom[i].addEventListener('click', () => {
-        showSlider(i);
-    });     
-}
-
-thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-
-nextDom.onclick = function(){
-    showSlider('next');    
-}
-
-prevDom.onclick = function(){
-    showSlider('prev');    
-}
-
-function showSlider(type){
-    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
-    
-    if(type === 'next'){
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-    }else{
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length -  1]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length -  1]);
-    }
-    carouselDom.classList.add('next');
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove('next');
-    }, timeRunning);
-}
-*/
-
-
-
 
 
 
