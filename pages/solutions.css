@@ -16,7 +16,7 @@ header, header * {
   all: unset;
 }
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/bg.webp');
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../image/solutions/solutionsBGImg.webp');
   background-size: cover;
   background-position: center 50px;
   color:  white !important;

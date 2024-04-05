@@ -15,6 +15,7 @@ header{
     font-size: 0.75em;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 header a{
     margin-left: 40px;

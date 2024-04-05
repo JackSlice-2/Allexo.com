@@ -39,14 +39,14 @@ const products = [
     ],
     colors: [
       {
-        img: "./img/Placas internas ALX1000.png",
+        img: "../image/products/productsHardwareSecondary.webp",
       }
     ],
     images: [
-      "./img/DETALHA PROCESSADOR.png",
-      "./img/WEB SERVER.png",
-      "./img/módulos IO.png",
-      "./img/GPS.png"
+      "../image/products/productsHardwareDetail1.webp",
+      "../image/products/productsHardwareDetail2.webp",
+      "../image/products/productsHardwareDetail3.webp",
+      "../image/products/productsHardwareDetail4.webp",
     ]
   },
   {
@@ -81,14 +81,14 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "./img/jordan.png",
+        img:  "../image/products/productsSoftwareSecondary.webp",
       }
     ],
     images: [
-      "./img/GPS.png",
-      "./img/GPS.png",
-      "./img/GPS.png",
-      "./img/GPS.png"
+      "../image/products/productsHardwareDetail1.webp",
+      "../image/products/productsHardwareDetail1.webp",
+      "../image/products/productsHardwareDetail1.webp",
+      "../image/products/productsHardwareDetail1.webp",
     ]
   }
 ];
