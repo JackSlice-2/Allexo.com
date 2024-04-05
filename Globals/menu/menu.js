@@ -25,7 +25,7 @@ class HeaderElement extends HTMLElement {
           </ul>
         </nav>
         <div>
-          <img src="/image/Logo.webp" class="logo">
+          <img alt="" src="/image/Logo.webp" class="logo">
         </div>
       </header>
     `;
