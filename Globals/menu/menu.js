@@ -21,7 +21,7 @@ class HeaderElement extends HTMLElement {
             <li><a href='/pages/contact.html'>Contato</a></li>
             <li><a href='/pages/newsLetter.html'>Newsletter</a></li>
             <li id="iot-li">
-              <a href='http://iot.allexo.com.br'>IoTHINGS Login</a></li>
+              <a href='http://iot.allexo.com.br' target="_blank" >IoTHINGS Login</a></li>
           </ul>
         </nav>
         <div>

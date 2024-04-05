@@ -135,3 +135,30 @@ span{
     font-weight: 600;
 
 }
+
+@media screen and (max-width: 768px){
+    .row{
+        width: 90%;
+    }
+    .container{
+        padding: 5%;
+    }
+    .iconBox{
+        max-height: 50px;
+    }
+    .textBox{
+        max-height: 50px;
+        font-size: 10px;
+    }
+    i{
+        font-size: 30px;
+    }
+    span{
+        font-size: 15px;
+    }
+    .imgObjects{
+        height: 100%;
+        width: 1300px;
+        margin-left: -500px;
+    }
+}

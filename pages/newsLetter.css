@@ -64,3 +64,39 @@ body{
     cursor: pointer;
     padding: 0 20px;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+       padding: 100px 20px;
+    }
+   
+    .container h1 {
+       width: 100%;
+       font-size: 30px;
+    }
+   
+    .container p {
+       max-width: 80%;
+       font-size: 14px;
+    }
+   
+    .emailBox {
+       height: 40px;
+    }
+   
+    .emailBox i {
+       width: 40px;
+       font-size: 20px;
+       line-height: 40px;
+    }
+   
+    .textBox {
+       width: 100%;
+       padding: 0 10px;
+    }
+   
+    .btn {
+       padding: 0 10px;
+    }
+   }

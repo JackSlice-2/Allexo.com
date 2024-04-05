@@ -3,7 +3,7 @@
 html{
   font-family: 'Poppins', sans-serif;
 }
-*:not(ul){
+*:not(ul, img){
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,6 +47,7 @@ body{
     width: 50%;
     display: flex;
     flex-direction:column;
+    gap: 15px;
 }
 .container .contactInfo .box{
     position: relative;
@@ -55,6 +56,17 @@ body{
     width: 50%;
     padding-bottom: 15px;
     background-color:rgba(0,  70,  104,  0.7);
+    border-radius: 10px;
+    gap: 10px;
+    
+}
+.contactInfo .box:hover{
+    background-color: #00bcd4;
+    color: #fff;
+}
+.contactInfo .box:hover .text h3{
+    color: #00bcd4
+    background-color: #00bcd4;
 }
 .contactInfo .box .icon{
     min-width: 60px;
@@ -67,6 +79,7 @@ body{
     font-size: 22px;
     color: #222;
 }
+
 .contactInfo .box::before{
     font-family: FontAwesome;
     position: absolute;
@@ -124,10 +137,6 @@ body{
     color: #fff;
     flex-direction: column;
     font-weight: 300;
-}
-.container .contactInfo .box .text h3{
-    font-weight: 500;
-    color: #00bcd4
 }
 .contactForm {
     width: 100%;
@@ -239,6 +248,9 @@ transform: translate(-20);
     }
     .container{
         flex-direction: column;
+        background-color: rgba(0,  70,  104,  0.7);
+        border-radius: 10px;
+        padding: 20px;
     }
     .container .contactInfo{
         margin-bottom: 40px;
@@ -253,6 +265,7 @@ transform: translate(-20);
     }
     .container .contactInfo .box{
         width: 100%;
+        background-color: rgba(0,  0,  0,  0.0);
     }
     .container .contactInfo .box .text{
         margin-left: 20px;
