@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: url(img/contact.jpg);
+    background: linear-gradient(180deg, #09203f 0%, #537895 100%);
     background-size: cover;
 }
 .contact .content {
