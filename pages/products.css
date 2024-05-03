@@ -332,6 +332,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: black;
 }
 
 .fInput {
@@ -426,23 +427,22 @@ footer {
     padding-bottom:150px;
   }
   .imageProduct {
-    padding: 20px;
+    padding-bottom: 20px;
     gap: 10px;
     display: flex;
     flex-direction: column;
-    padding-top:100px;
-    width: 100%;
+    padding-top:50px;
+    width: full;
     background-color: whitesmoke;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    
   }
   .productImg{
     width: 100%;
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid black;
   }
   .productImg:hover{
     transform: scale(1.2);

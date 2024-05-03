@@ -5,6 +5,7 @@ body{
     background-color: #000;
     color: #eee;
     font-family: Poppins;
+    overflow-x: hidden;
 }
 .index{
     margin: 0;
@@ -442,4 +443,105 @@ body{
         border-radius: 0;
     }
 }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .thumbnail{
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        width: max-content;
+        z-index: 10;
+        display: flex;
+        gap: 0.7em;
+    }
+    .thumbnail .item{
+        width: 7%;
+        height: 19em;
+        flex-shrink: 0;
+        position: relative;
+    }
+    .thumbnail .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .thumbnail .item .content .title{
+        display: none;
+    }
+    .play { 
+        font-size: 1.5em; /* change this to change size */
+        height: 3em;
+        margin: 20px auto;
+        position: absolute;
+        transition: all 150ms ease-out;
+        width: 4em;
+        left: 25rem;
+        top: 3rem;
+      }
+    .carousel .list .item .content{
+        top: 5rem;
+        height: 70%;
+        left: 45%;
+        font-weight: 400;
+    }
+    .carousel .list .item .title,
+    .carousel .list .item .topic{
+        font-weight: bold;
+        line-height: 1.7em;
+        font-size: 3em;
+    }
+    #topic{
+        font-size: 1.5em;
+    }
+    .carousel .list .item .topic,
+    .topic{
+        color: #f1683a;
+    }
+    .carousel.prev .list .item .content .title,
+    .carousel .list .item .content .title,
+    .title{
+    }
+    @keyframes outFrame{
+        to{
+            width: 150px;
+            height: 220px;
+            bottom: 50px;
+            left: 5%;
+            border-radius: 20px;
+        }
+    }
+    .carousel.next .list .item img{
+        width: 150px;
+        height: 220px;
+        position: absolute;
+        bottom: 5px;
+        left: 5%;
+        border-radius: 30px;
+        animation: showImage .7s linear 1 forwards;
+    }
+    @keyframes showImage{
+        to{
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+    }
+
+@media screen and (max-width: 800px) {
+    .thumbnail{
+        bottom: 1em;
+        left: 1em;
+        right: 1em
+    }
+    .thumbnail .item{
+        width: 4.25%;
+        height: 20em;
+    }
 }
